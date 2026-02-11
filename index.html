@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Detailing | Premium Car Detailing & Vehicle Protection Calgary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-red: #e31e24;
+            --deep-black: #080808;
+            --surface-gray: #121212;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --border-color: #222222;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: var(--deep-black); color: var(--text-main); line-height: 1.8; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; line-height: 1.2; }
+        
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 30px; }
+        .btn { background: var(--brand-red); color: white; padding: 18px 36px; text-decoration: none; font-weight: 800; display: inline-block; border-radius: 3px; transition: all 0.3s ease; text-transform: uppercase; border: none; cursor: pointer; font-size: 14px; }
+        .btn:hover { background: #ff1f26; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(227, 30, 36, 0.3); }
+
+        /* Custom Professional Logo Styling */
+        .custom-logo { display: flex; align-items: center; text-decoration: none; gap: 5px; }
+        .logo-x { font-family: 'Oswald', sans-serif; font-size: 42px; font-weight: 800; color: var(--brand-red); line-height: 1; position: relative; }
+        .logo-text { font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 300; color: #fff; letter-spacing: 4px; text-transform: uppercase; line-height: 1; margin-top: 5px; }
+
+        /* Header Navigation */
+        header { background: rgba(0,0,0,0.98); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 30px; font-size: 13px; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
+        .nav-links a:hover { color: var(--brand-red); }
+
+        /* Hero Section */
+        .hero { position: relative; padding: 220px 0; background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/33563/car-wash-detailing-car-clean.jpg?auto=compress&cs=tinysrgb&w=1920'); background-size: cover; background-position: center; border-bottom: 6px solid var(--brand-red); }
+        .hero h1 { font-size: clamp(3rem, 7vw, 5rem); margin-bottom: 30px; }
+        .hero p { font-size: 1.4rem; max-width: 900px; color: #f5f5f5; margin-bottom: 45px; font-weight: 300; }
+
+        /* SEO Content Layout */
+        .section-padding { padding: 140px 0; border-bottom: 1px solid var(--border-color); }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: flex-start; }
+        .inline-link { color: var(--brand-red); text-decoration: none; font-weight: 700; transition: 0.3s; }
+        .inline-link:hover { text-decoration: underline; }
+
+        /* Rich Content Styles */
+        .long-form-text p { margin-bottom: 30px; color: var(--text-muted); font-size: 1.1rem; text-align: justify; }
+        .long-form-text h2 { margin-bottom: 35px; font-size: 3rem; color: #fff; border-left: 5px solid var(--brand-red); padding-left: 20px; }
+        .long-form-text h3 { margin: 50px 0 25px; font-size: 2rem; color: #fff; }
+
+        /* Service Cards Detailed */
+        .service-card { background: var(--surface-gray); padding: 60px; border: 1px solid var(--border-color); border-radius: 5px; margin-bottom: 50px; position: relative; transition: 0.4s; }
+        .service-card:hover { border-color: var(--brand-red); background: #181818; }
+        .service-card h3 { font-size: 2.2rem; margin-bottom: 30px; color: var(--brand-red); border: none; }
+        .list-detailed { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 35px; }
+        .list-detailed li { padding-left: 35px; position: relative; color: var(--text-muted); font-size: 0.95rem; }
+        .list-detailed li::before { content: "›"; position: absolute; left: 0; color: var(--brand-red); font-weight: bold; font-size: 1.8rem; line-height: 1; }
+
+        /* High Quality Gallery */
+        .work-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin: 70px 0; }
+        .work-gallery div { border-radius: 10px; overflow: hidden; height: 400px; border: 1px solid var(--border-color); box-shadow: 0 15px 30px rgba(0,0,0,0.5); }
+        .work-gallery img { width: 100%; height: 100%; object-fit: cover; transition: 0.8s ease; }
+        .work-gallery img:hover { transform: scale(1.15); filter: brightness(1.1); }
+
+        /* Footer */
+        footer { background: #040404; padding: 120px 0 50px; border-top: 1px solid var(--border-color); }
+        .footer-grid { display: grid; grid-template-columns: 1.2fr 1.8fr; gap: 100px; }
+        .map-frame { height: 550px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+        .map-frame iframe { width: 100%; height: 100%; filter: invert(0.9) grayscale(1) contrast(1.2); border: none; }
+
+        @media (max-width: 1024px) {
+            .grid-2, .footer-grid, .work-gallery { grid-template-columns: 1fr; }
+            .list-detailed { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 3rem; }
+            .custom-logo .logo-text { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="https://xdetailing.ca" class="custom-logo">
+                <span class="logo-x">X</span>
+                <span class="logo-text">Detailing</span>
+            </a>
+            <div class="nav-links">
+                <a href="https://xdetailing.ca/car-detailing/">Services</a>
+                <a href="https://xdetailing.ca/about-us/">The Studio</a>
+                <a href="https://xdetailing.ca/reviews">Client Reviews</a>
+                <a href="https://xdetailing.ca/booking/" class="btn" style="padding: 12px 24px; font-size: 12px; margin-left: 20px;">Book Online</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Premium Car Detailing & Vehicle Protection in Calgary, AB</h1>
+        <p>When your vehicle matters more than just transportation, precision detailing and long-term protection become essential. At <a href="https://xdetailing.ca" class="inline-link">X Detailing</a>, we deliver elite automotive services built around craftsmanship, certified expertise, and uncompromising attention to detail.</p>
+        <div style="display: flex; gap: 25px; flex-wrap: wrap;">
+            <a href="https://xdetailing.ca/booking/" class="btn">Start Your Protection Plan</a>
+            <a href="tel:+14036047967" class="btn" style="background: transparent; border: 2px solid white;">+1 403-604-7967</a>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container long-form-text">
+        <div class="grid-2">
+            <div>
+                <h2>Calgary’s Trusted Automotive Detailing Experts</h2>
+                <p>Based at 4312 Macleod Trl, Calgary, AB T2G 0A4, our studio serves vehicle owners who demand flawless results, measurable protection, and long-lasting value. With over 200 verified 5.0-star reviews, <a href="https://xdetailing.ca" class="inline-link">X Detailing</a> has earned a reputation as one of the most trusted car detailing and undercoating specialists in Calgary.</p>
+                <p>Calgary’s climate is demanding. Road salt, gravel, UV exposure, snow, and temperature swings all take a toll on your vehicle’s paint, underbody, and interior surfaces. Generic washes and quick fixes don’t provide meaningful protection. At X Detailing, every service is designed specifically for Calgary driving conditions, combining industry-certified techniques with professional-grade products to achieve results you can see—and protection you can measure.</p>
+                <p>From daily drivers to luxury vehicles, SUVs, trucks, and fleet cars, we apply proven detailing systems that restore, protect, and preserve your investment—inside and out. Our team of certified automotive detailing technicians works 24 hours a day to accommodate busy schedules, late drop-offs, and urgent protection needs. When precision matters, our process never changes—only the solution does.</p>
+            </div>
+            <div>
+                <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Master Detailing Calgary" style="width: 100%; border-radius: 5px; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+            </div>
+        </div>
+
+        <div class="work-gallery">
+            <div><img src="https://images.pexels.com/photos/372810/pexels-photo-372810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Interior Deep Clean"></div>
+            <div><img src="https://images.pexels.com/photos/5233258/pexels-photo-5233258.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Paint Correction Process"></div>
+            <div><img src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ceramic Coating Lab"></div>
+        </div>
+
+        <h3>Comprehensive Automotive Services Under One Roof</h3>
+        <p>We provide a full suite of professional auto detailing and protection services in Calgary, eliminating the need to visit multiple shops. Each service is performed with a structured, step-by-step methodology focused on durability, aesthetics, and resale value. Our facility is designed to provide the optimal environment for high-stakes automotive restoration, ensuring that every layer of protection is applied with surgical precision.</p>
+        
+        <div class="service-card">
+            <h3>Professional Car Detailing in Calgary</h3>
+            <p>Our car detailing services in Calgary go far beyond surface cleaning. We restore your vehicle to a like-new condition while preserving original materials. Every detailing service is customized based on vehicle age, condition, and usage—never a one-size-fits-all package.</p>
+            <ul class="list-detailed">
+                <li><strong>pH-Balanced Hand Wash:</strong> Safe hand wash using specialized solutions to prevent paint swirls.</li>
+                <li><strong>Industrial Decontamination:</strong> Removal of road tar, iron fallout, and industrial residue.</li>
+                <li><strong>Paint Enhancement:</strong> Professional machine polishing for improved clarity and mirror gloss.</li>
+                <li><strong>UV Guard Sealants:</strong> Protective layers to guard against UV damage and oxidation.</li>
+                <li><strong>Interior Extraction:</strong> Deep cleaning of carpets, upholstery, and mats for total hygiene.</li>
+                <li><strong>Leather Revitalization:</strong> Premium conditioning to prevent cracking and fading over time.</li>
+                <li><strong>Molecular Deodorization:</strong> Odor neutralization using non-toxic treatments for a fresh cabin.</li>
+                <li><strong>Trim Restoration:</strong> Restoration of dashboard, console, and interior trim to factory finish.</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Undercoating Calgary – Long-Term Rust Protection</h3>
+            <p>Rust is one of the most expensive and irreversible problems for vehicles in Alberta. That’s why our undercoating services in Calgary are among the most requested solutions we offer. Road salt, moisture, and debris aggressively attack exposed metal components beneath your vehicle.</p>
+            <ul class="list-detailed">
+                <li><strong>Corrosion Barrier:</strong> Creates a durable protective barrier that significantly slows oxidation.</li>
+                <li><strong>Frame Protection:</strong> Targeted shielding for the frame, suspension, and critical brake lines.</li>
+                <li><strong>Resale Maintenance:</strong> Improves long-term resale value by preventing structural decay.</li>
+                <li><strong>Alberta Formulation:</strong> Ideal for trucks, SUVs, and winter-driven vehicles in Calgary.</li>
+                <li><strong>Precision Application:</strong> Controlled coverage ensuring complete protection without trapping moisture.</li>
+                <li><strong>Component Safety:</strong> Applied carefully to avoid damaging rubber or electrical components.</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Paintless Dent Repair (PDR) in Calgary</h3>
+            <p>Minor dents and dings don’t always require repainting. Our paintless dent repair in Calgary restores panels to their original shape while preserving factory paint. This advanced technique is ideal for hail damage, door dings, and parking lot accidents.</p>
+            <ul class="list-detailed">
+                <li><strong>Paint Preservation:</strong> No paint or fillers required, keeping the factory finish intact.</li>
+                <li><strong>Rapid Turnaround:</strong> Faster turnaround time compared to traditional body shop repairs.</li>
+                <li><strong>Cost Savings:</strong> Highly cost-effective compared to traditional body panel repair.</li>
+                <li><strong>Invisible Results:</strong> Precision tools achieve smooth, invisible results in a single visit.</li>
+                <li><strong>Panel Integrity:</strong> Restores the structural curve and aesthetic of the metal.</li>
+                <li><strong>Value Protection:</strong> Eliminates visible damage that detracts from vehicle worth.</li>
+            </ul>
+        </div>
+
+        <div class="grid-2 section-padding" style="border-bottom: none;">
+            <div>
+                <h2>Why Calgary Vehicle Owners Choose X Detailing</h2>
+                <p>Choosing a detailing provider isn’t just about appearance—it’s about trust, consistency, and proven results. X Detailing stands apart through measurable value and professional accountability. Every vehicle receives the same level of care, whether it’s a compact sedan or a high-end performance car.</p>
+                <ul class="list-detailed" style="grid-template-columns: 1fr;">
+                    <li><strong>200+ Verified 5.0-Star Reviews:</strong> A reputation built on consistent customer satisfaction.</li>
+                    <li><strong>Certified Techs:</strong> Experienced technicians using premium products designed for Canada.</li>
+                    <li><strong>24-Hour Service:</strong> Unmatched availability to fit into any professional schedule.</li>
+                    <li><strong>Transparent Pricing:</strong> Honest recommendations without high-pressure upselling.</li>
+                    <li><strong>Strategic Location:</strong> Central Calgary location on Macleod Trail for easy access.</li>
+                </ul>
+            </div>
+            <div style="background: var(--surface-gray); padding: 50px; border-left: 6px solid var(--brand-red);">
+                <h3>Built for Calgary’s Driving Conditions</h3>
+                <p>Calgary vehicles face challenges that require specialized protection strategies. Temperature swings cause material expansion. UV exposure fades paint. Gravel damages clear coat. Road salt accelerates rust.</p>
+                <p>Our services are structured to address seasonal damage prevention, long-term material preservation, and enhanced durability for daily commuting. This localized approach ensures our solutions perform where generic detailing fails.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <h3>A Process Designed Around Precision</h3>
+            <p>At X Detailing, results are never accidental. Each service follows a proven workflow: initial vehicle assessment to identify wear and risks, service customization based on owner goals, controlled execution using professional tools, and a final inspection to verify consistency. This structured process ensures repeatable excellence and customer confidence.</p>
+            <p>Whether you commute daily, manage a fleet, or protect a high-value vehicle, X Detailing delivers solutions built for real-world use—not showroom shortcuts. Protecting your vehicle starts with choosing the right professionals.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="https://xdetailing.ca" class="custom-logo" style="margin-bottom: 40px;">
+                    <span class="logo-x">X</span>
+                    <span class="logo-text">Detailing</span>
+                </a>
+                <h3 style="margin-bottom: 25px;">Book Calgary’s Premium Detailing</h3>
+                <p><strong>Name:</strong> X Detailing</p>
+                <p><strong>Address:</strong> 4312 Macleod Trl, Calgary, AB T2G 0A4, Canada</p>
+                <p><strong>Phone:</strong> <a href="tel:+14036047967" style="color: var(--brand-red); text-decoration: none;">+1 403-604-7967</a></p>
+                <p><strong>Website:</strong> <a href="https://xdetailing.ca" style="color: var(--brand-red); text-decoration: none;">https://xdetailing.ca</a></p>
+                <div style="margin-top: 40px;">
+                    <a href="https://www.google.com/maps/place/X+Detailing+-+Car+Detailing+%7C+PPF+%7C+Ceramic+Coating/@51.0152962,-114.0642434,17z/data=!3m1!4b1!4m6!3m5!1s0x53717196d2f0dffb:0x615387f9e5c68d0f!8m2!3d51.0152962!4d-114.0642434!16s%2Fg%2F11w2dqlcns" class="btn">Get Directions</a>
+                </div>
+                <p style="margin-top: 50px; color: #444; font-size: 0.85rem;">
+                    Serving Calgary and surrounding areas with 24-hour flexible scheduling for all vehicle types including Sedans, SUVs, Pickup Trucks, and Luxury Fleet Vehicles.
+                </p>
+            </div>
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1FO5t1EcMzLfStkSWMKknCVYPL80FEAw&ehbc=2E312F"></iframe>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 100px; padding-top: 30px; border-top: 1px solid #222; color: #555; font-size: 0.8rem;">
+            © 2026 X Detailing Calgary. Verified Excellence in Automotive Protection. Crafted for the Alberta Climate.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
